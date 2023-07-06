@@ -1,12 +1,8 @@
-import express from "express";
+const server = require("./src/app.js")
+const PORT = process.env.PORT || 3000;
 
-const app = express();
-const port = 3000;
+//!Falta sincronizar esto con la base de datos
 
-app.get("/", (req, res) => {
-    res.send({ test: "All good!" });
-});
-
-app.listen(port || 5000, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+server.listen(PORT, () => {
+    console.log(`app listening at http://localhost:${PORT}`);
 });
