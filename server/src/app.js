@@ -12,6 +12,23 @@ server.use(cookieParser());
 server.use(morgan('dev'));
 //todo  //Middleware//
 
+//!TESTING ----------------------------------
+
+// server.get("/",async (req,res)=>{
+  
+// })
+// const { CV  }= require("./db.js")
+
+// server.post("/",async (req,res)=>{
+//  const newCv =  await CV.create({
+//     cvUrl: "hjasdhjkhjkasdhjkasdkhjashjkd",
+//     date: new Date()
+//   })
+//   res.status(200).send(newCv)
+// })
+
+//!TESTING ----------------------------------
+
 
 //todo-->  //Endpoints- routes//
 server.use ("/", routes)
