@@ -12,7 +12,7 @@ const applicationSchema = new Schema({
   recruiter: {type:String, ref:"Recruiter"}
 })
 
-module.exports = applicationSchema
+module.exports = applicationSchema;
 
 //https://stackoverflow.com/questions/11604928/is-there-a-way-to-auto-generate-objectid-when-a-mongoose-model-is-newed
 /*

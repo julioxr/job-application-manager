@@ -1,10 +1,11 @@
 const express = require("express")
 const applicationsRouter = express()
-const {getAplications} = require("../../controllers/aplicationsController/aplicationsController")
+const {createAplications} = require("../../controllers/aplicationsController/aplicationsController")
 
 //!falta middleware para controlar el error del cliente
-applicationsRouter.get("/getApplications",getAplications)
+applicationsRouter.post("/createApplications",createAplications)
 
+module.exports = applicationsRouter
 // async function controllerParaCrearPostulacion(req,res) {
 //   const {dataMail, dataRecruiter,cv } = req.body
 //   let newRecruiter = dataRecruiter.new && await Recruiter.create(dataRecruiter)
@@ -56,6 +57,3 @@ applicationsRouter.get("/getApplications",getAplications)
 //   },
 //   cv:"id_cv"
 // }
-
-
-module.exports = applicationsRouter
